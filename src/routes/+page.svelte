@@ -17,9 +17,9 @@
 </Intro>
 <section class="why">
 	<p>
-		I want people to feel something by the things i create. With <i>love</i> for detail,
+		I want people to feel something by the things I create. With <i>love</i> for detail,
 		<i>passion</i>
-		for UI effects and <i>dedication</i> to intuitive user experience, the things i create come to life.
+		for UI effects and <i>dedication</i> to intuitive user experience, the things I create come to life.
 	</p>
 	<p>
 		I am an expert for Vue.js and Wordpress. I strive to
@@ -58,6 +58,7 @@
 		</h3>
 		<ul>
 			<li>Git</li>
+			<li>Vite</li>
 			<li>Webpack</li>
 			<li>Twig</li>
 			<li>Nginx</li>
