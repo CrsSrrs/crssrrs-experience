@@ -1,9 +1,11 @@
 <script>
-	import Social from '$lib/social/Social.svelte';
+	import Social from '$lib/modules/social/Social.svelte';
+	import Divider from '$lib/modules/divider/Divider.svelte';
 </script>
 
 <footer>
-    <div>
+	<Divider />
+    <div class="_wrapper">
         <p>
             <a href="/imprint" class="link">Imprint</a>
         </p>
@@ -22,7 +24,7 @@
 		box-sizing: border-box;
 	}
 
-	footer div {
+	._wrapper {
 		padding: 1rem 0;
 		flex: 1;
 		display: flex;
@@ -31,13 +33,16 @@
 		border-top: 1px solid var(--primary-light-color);
 	}
 
-	footer .link {
+	.link {
 		margin-right: 1em;
 		font-size: 0.75em;
 		display: inline-block;
 
 		color: var(--text-color);
-		text-decoration: underline;
+	}
+
+	.link:hover {
+		color: var(--accent-color);
 	}
 
     @media screen and (max-width: 600px) {

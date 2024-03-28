@@ -26,7 +26,7 @@
 
 <style>
 	svg path {
-		fill: var(--primary-light-color);
-		stroke: var(--primary-light-color);
+		fill: var(--primary-lighter-color);
+		stroke: var(--primary-lighter-color);
 	}
 </style>

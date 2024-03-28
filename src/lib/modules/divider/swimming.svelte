@@ -23,6 +23,6 @@
 
 <style>
 	svg path {
-		fill: var(--primary-light-color);
+		fill: var(--primary-lighter-color);
 	}
 </style>

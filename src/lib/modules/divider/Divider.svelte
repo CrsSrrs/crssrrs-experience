@@ -4,49 +4,47 @@
 	import Runner from './running.svelte';
 </script>
 
-<section class="intro">
-	<slot />
+<div class="divider">
 	<div class="icons">
 		<Swimmer />
 		<Biker />
 		<Runner />
 	</div>
-</section>
+</div>
 
 <style>
-	.intro {
+	.divider {
 		justify-content: center;
 		align-items: center;
-		padding-top: 5vh;
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 
-		border-bottom: 1px solid var(--primary-light-color);
+		border-bottom: 2px solid var(--primary-lighter-color);
 
 		position: relative;
 	}
 
-	.intro :global(pre) {
+	.divider :global(pre) {
 		display: inline;
 		color: var(--tertiary-color);
 	}
 
 	.icons {
-        margin-top: 4rem;
+        margin-top: 2rem;
 		width: 100%;
 		height: 0.5rem;
 
-        border-left: 1px solid var(--primary-light-color);
-        border-right: 1px solid var(--primary-light-color);
+        border-left: 2px solid var(--primary-lighter-color);
+        border-right: 2px solid var(--primary-lighter-color);
 
         position: relative;
 	}
 
     .icons::before, .icons::after {
         content: '';
-        width: 1px;
+        width: 2px;
         height: 100%;
 
-        background-color: var(--primary-light-color);
+        background-color: var(--primary-lighter-color);
 
         position: absolute;
         bottom: 0;
