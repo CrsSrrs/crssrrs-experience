@@ -17,7 +17,7 @@
 
 <style>
 	footer {
-		padding: 0 1rem;
+		padding: 0 2rem;
 		width: 100%;
 		max-width: 900px;
 		margin: 0 auto;
@@ -25,12 +25,12 @@
 	}
 
 	._wrapper {
-		padding: 1rem 0;
+		padding-top: 1em;
+		padding-bottom: 1em;
 		flex: 1;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		border-top: 1px solid var(--primary-light-color);
 	}
 
 	.link {
@@ -51,4 +51,10 @@
             justify-content: center;
         }
     }
+
+	@media screen and (min-width: 1200px) {
+		footer {
+			padding: 0;
+		}
+	}
 </style>

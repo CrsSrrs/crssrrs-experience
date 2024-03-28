@@ -5,18 +5,16 @@
 <a href="/" class="logo"><LogoSvg></LogoSvg> christophschroers</a>
 
 <style>
-    .logo {
+	.logo {
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
-		/* width: 100%;
-		height: 100%; */
 
 		color: var(--text-color);
+		font-size: 1em;
 		text-decoration: none;
 		font-family: 'Noto Serif';
 
-		transition: color .4s ease;
+		transition: color 0.4s ease;
 	}
 
 	.logo:hover {
@@ -25,12 +23,29 @@
 
 	.logo :global(svg) {
 		margin-right: 0.5em;
-		width: 4em;
-		height: 4em;
+		width: 3em;
+		height: 3em;
 		object-fit: contain;
 	}
 
 	.logo :global(svg path) {
 		fill: var(--secondary-color);
+	}
+
+	@media screen and (min-width: 600px) {
+		.logo {
+			font-size: 1.35em;
+		}
+
+		.logo :global(svg) {
+			width: 4em;
+			height: 4em;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.logo {
+			justify-content: flex-end;
+		}
 	}
 </style>
