@@ -51,13 +51,9 @@
 </section>
 
 <style>
-	h1,
-	h2 {
-		width: 100%;
-	}
-
 	h1 {
-		margin-bottom: 0;
+        margin-bottom: 0;
+		width: 100%;
 	}
 
 	section:not(:last-child) {

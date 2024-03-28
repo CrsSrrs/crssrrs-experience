@@ -22,9 +22,9 @@
 		/>
 		<h2>Hi! I am Christoph,<br />Web Developer.</h2>
 		<nav>
-			<li><a href="#skills" class:-active={$page.url.hash === '#skills'}>Skills</a></li>
-			<li><a href="#work" class:-active={$page.url.hash === '#work'}>Portfolio</a></li>
-			<li><a href="#contact" class:-active={$page.url.hash === '#contact'}>Contact</a></li>
+			<li><a href="/#skills" class:-active={$page.url.hash === '#skills'}>Skills</a></li>
+			<li><a href="/#work" class:-active={$page.url.hash === '#work'}>Portfolio</a></li>
+			<li><a href="/#contact" class:-active={$page.url.hash === '#contact'}>Contact</a></li>
 		</nav>
 	</div>
 	{#if mql}
