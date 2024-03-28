@@ -78,6 +78,30 @@
 			<p>Wordpress custom theme.<span class="note">On behalf of Me & Company GmbH</span></p>
 			<Tag class="-small">Wordpress</Tag>
 		</div>
+        <div class="item">
+            <div class="thumb">
+                <a href="https://bikepacking-coach.de" target="_blank">
+                    <enhanced:img
+                        class="portrait"
+                        src="./bikepacking-coach.de.webp"
+                        alt="Bikepacking Coach Website"
+                    />
+                </a>
+            </div>
+            <div class="title">Bikepacking Coach (private)</div>
+            <p>Website with DaisyUI library.</p>
+            <Tag class="-small">Vue</Tag>
+        </div>
+		<div class="item">
+			<div class="thumb">
+				<a href="https://normacho.rocks" target="_blank">
+					<enhanced:img class="portrait" src="./normacho.rocks.webp" alt="Normacho Band Website" />
+				</a>
+			</div>
+			<div class="title">Normacho (private)</div>
+			<p>Website for my band.</p>
+			<Tag class="-small">Vue</Tag>
+		</div>
 	</div>
 </div>
 
@@ -86,6 +110,7 @@
 		display: grid;
 		grid-template-columns: repeat(12, minmax(0, 1fr));
 		gap: 2rem;
+        row-gap: 4rem;
 	}
 
 	.item {

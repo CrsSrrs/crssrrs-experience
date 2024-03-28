@@ -39,10 +39,11 @@
         <li><Tag>Vite</Tag></li>
         <li><Tag>Webpack</Tag></li>
         <li><Tag>Twig</Tag></li>
+        <li><Tag>Sequelize</Tag></li>
+        <li><Tag>Prisma</Tag></li>
         <li><Tag>Nginx</Tag></li>
         <li><Tag>Apache</Tag></li>
         <li><Tag>Bash</Tag></li>
-        <li><Tag>Docker</Tag></li>
     </ul>
     <h4>
         <span class="line-indicator">~/skills</span>
@@ -54,6 +55,8 @@
         <li><Tag>Clean Code</Tag></li>
         <li><Tag>Responsive</Tag></li>
         <li><Tag>Animations</Tag></li>
+        <li><Tag>MVC</Tag></li>
+        <li><Tag>SOA</Tag></li>
         <li><Tag>REST</Tag></li>
         <li><Tag>CI/CD</Tag></li>
     </ul>
