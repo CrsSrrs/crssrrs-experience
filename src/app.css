@@ -102,7 +102,7 @@ b {
 }
 
 a:hover {
-	color: var(--accent-color);
+	color: var(--tertiary-color);
 }
 
 pre {

@@ -72,7 +72,7 @@
 	.contact a {
 		font-size: 1.35rem;
 		font-weight: 600;
-		color: var(--accent-color);
+		color: var(--tertiary-color);
 		text-decoration: none;
 	}
 </style>
