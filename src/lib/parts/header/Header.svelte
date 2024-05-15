@@ -75,8 +75,7 @@
 	}
 
 	a.-active {
-		color: var(--accent-color);
-		/* font-weight: 600; */
+		color: var(--tertiary-color);
 	}
 
 	@media screen and (min-width: 900px) {
