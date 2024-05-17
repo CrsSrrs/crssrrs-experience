@@ -1,38 +1,41 @@
 <script>
     import Tag from "$lib/atoms/Tag/Tag.svelte";
+	import { t } from '$lib/translations';
 </script>
 
 <div class="skills">
     <h4>
         <span class="line-indicator">~/skills</span>
-        <span class="skill-head">Languages</span>
+        <span class="skill-head">{$t('skills.languages')}</span>
     </h4>
     <ul>
         <li><Tag>JavaScript</Tag></li>
         <li><Tag>TypeScript</Tag></li>
+        <li><Tag>PHP</Tag></li>
         <li><Tag>HTML5</Tag></li>
         <li><Tag>CSS3</Tag></li>
         <li><Tag>SASS</Tag></li>
-        <li><Tag>PHP</Tag></li>
         <li><Tag>SQL</Tag></li>
+        <li><Tag>{$t('languages.de')}</Tag></li>
+        <li><Tag>{$t('languages.en')}</Tag></li>
     </ul>
     <h4>
         <span class="line-indicator">~/skills</span>
-        <span class="skill-head">Frameworks</span>
+        <span class="skill-head">{$t('skills.frameworks')}</span>
     </h4>
     <ul>
         <li><Tag>Vue</Tag></li>
+        <li><Tag>Wordpress</Tag></li>
         <li><Tag>Svelte</Tag></li>
         <li><Tag>Nest</Tag></li>
         <li><Tag>Adonis</Tag></li>
         <li><Tag>Express</Tag></li>
         <li><Tag>Node</Tag></li>
         <li><Tag>Laravel</Tag></li>
-        <li><Tag>Wordpress</Tag></li>
     </ul>
     <h4>
         <span class="line-indicator">~/skills</span>
-        <span class="skill-head">Tools</span>
+        <span class="skill-head">{$t('skills.tools')}</span>
     </h4>
     <ul>
         <li><Tag>Git</Tag></li>
@@ -47,7 +50,7 @@
     </ul>
     <h4>
         <span class="line-indicator">~/skills</span>
-        <span class="skill-head">Methodologies</span>
+        <span class="skill-head">{$t('skills.methods')}</span>
     </h4>
     <ul>
         <li><Tag>Agile</Tag></li>

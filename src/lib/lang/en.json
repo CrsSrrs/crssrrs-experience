@@ -1,0 +1,116 @@
+{
+	"headline": "Hi! I am Christoph",
+	"profession": "Freelance Web Developer",
+	"where": "near Düsseldorf",
+	"nav": {
+		"skills": "Skills",
+		"work": "Work",
+		"contact": "Contact"
+	},
+
+	"intro": {
+		"headline": "<pre>Full-Stack</pre> is my profession.<br /><pre>Frontend</pre> is my passion."
+	},
+
+	"why": {
+		"motivation": "I want people to feel something by the things I create. With love for detail, passion for UI effects and dedication to intuitive user experience, the things I create come to life."
+	},
+
+	"what": {
+		"headline": "Full-Stack Development near Düsseldorf",
+		"subheadline": "Expert for Vue.js and WordPress",
+		"paragraphs": [
+			"I am a freelance full-stack developer, live near Düsseldorf, and specialize in Vue.js and WordPress. I have been working as a web developer for over 10 years.",
+			"My creative nature makes me a passionate front-end developer. I have a feel for good UX & UI and an eye for pixel perfection.",
+			"I put my analytical and technical character into practice in backend development. I enjoy designing and implementing software architectures and solving complex problems.",
+			"Thanks to my high level of comprehension, I learn quickly and enjoy using new technologies."
+		]
+	},
+
+	"skills": {
+		"languages": "Languages",
+		"frameworks": "Frameworks",
+		"tools": "Tools",
+		"methods": "Methodologies"
+	},
+
+	"work": {
+		"headline": "Recent work",
+		"projects": [
+			{
+				"title": "Hovgaard Games",
+				"description": "Theme for company and game specific pages.",
+				"link": "https://hovgaard.com",
+				"img": "hovgaard.com.webp",
+                "imgAlt": "Hovgaard Website",
+				"tags": ["Vitepress", "Vue"]
+			},
+			{
+				"title": "Taskforce",
+				"description": "Applicant management platform for interim management.",
+                "note": "On behalf of Me & Company GmbH",
+				"link": "https://interim.taskforce.net",
+				"img": "taskforce.net.webp",
+                "imgAlt": "Taskforce Interim-Management Plattform",
+				"tags": ["Vue", "Express", "Sequelize"]
+			},
+			{
+				"title": "Bilstein",
+				"description": "Wordpress custom theme with Gutenberg Blocks.",
+                "note": "On behalf of Me & Company GmbH",
+				"link": "https://www.bilstein.com",
+				"img": "bilstein.com.webp",
+                "imgAlt": "Bilstein Website",
+				"tags": ["Wordpress"]
+			},
+			{
+				"title": "Bilstein Motorsport",
+				"description": "Marketing Landingpage with scrolling animations.",
+                "note": "On behalf of Me & Company GmbH",
+				"link": "https://motorsport.bilstein.com",
+				"img": "motorsport.bilstein.com.webp",
+                "imgAlt": "Bilstein Motorsport Website",
+				"tags": ["Vue", "GSAP"]
+			},
+			{
+				"title": "Me & Company",
+				"description": "Wordpress custom theme.",
+                "note": "On behalf of Me & Company GmbH",
+				"link": "https://www.me-company.de",
+				"img": "me-company.de.webp",
+                "imgAlt": "Me and Company Website",
+				"tags": ["Wordpress"]
+			},
+			{
+				"title": "Bikepacking Coach",
+				"description": "Website with DaisyUI library.",
+                "note": "Private project",
+				"link": "https://bikepacking-coach.de",
+				"img": "bikepacking-coach.de.webp",
+                "imgAlt": "Bikepacking Coach Website",
+				"tags": ["Vue"]
+			},
+			{
+				"title": "Normacho",
+				"description": "Website for my band.",
+                "note": "Private project",
+				"link": "https://normacho.rocks",
+				"img": "normacho.rocks.webp",
+                "imgAlt": "Normacho Band Website",
+				"tags": ["Vue"]
+			}
+		]
+	},
+	
+	"contact": {
+        "headline": "Get in touch",
+        "paragraph1": "In collaboration I always think along, question critically and like to contribute with my own ideas. I can also act in an advisory role when finding solutions.",
+        "paragraph2": "I am based in Germany, NRW, near Düsseldorf. I travel by bike. I challenge me with triathlons. I absolutely love music. I play videogames.",
+        "paragraph3": "Feel free to contact me:"
+    },
+
+	"languages": {
+		"de": "German",
+		"en": "English"
+	}
+}

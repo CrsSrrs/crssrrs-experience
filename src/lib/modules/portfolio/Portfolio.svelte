@@ -1,107 +1,42 @@
 <script>
 	import Tag from '$lib/atoms/Tag/Tag.svelte';
+	import { t } from '$lib/translations';
+
+	const projectImages = import.meta.glob('./*.{webp,jpeg,jpg,png}', {
+		eager: true,
+		query: {
+			enhanced: true
+		}
+	});
 </script>
 
 <div class="portfolio-grid">
 	<div class="grid">
-		<div class="item">
-			<div class="thumb">
-				<a href="https://www.hovgaard.com" target="_blank">
-					<enhanced:img class="portrait" src="./hovgaard.com.webp" alt="Hovgaard Website" />
-				</a>
+		{#each $t('work.projects') as project}
+			<div class="item">
+				<div class="thumb">
+					<a href={project.link} target="_blank">
+						{#if projectImages[`./${project.img}`]}
+							<enhanced:img
+								class="portrait"
+								src={projectImages[`./${project.img}`].default}
+								alt={project.imgAlt}
+							/>
+						{/if}
+					</a>
+				</div>
+				<div class="title">{project.title}</div>
+				<p>
+					{project.description}
+					{#if project.note}
+						<span class="note">{project.note}</span>
+					{/if}
+				</p>
+				{#each project.tags as tag}
+					<Tag class="-small">{tag}</Tag>
+				{/each}
 			</div>
-			<div class="title">Hovgaard Games</div>
-			<p>Theme for company and game specific pages.</p>
-			<Tag class="-small">Vitepress</Tag>
-			<Tag class="-small">Vue</Tag>
-		</div>
-		<div class="item">
-			<div class="thumb">
-				<a href="https://interim.taskforce.net" target="_blank">
-					<enhanced:img
-						class="portrait"
-						src="./taskforce.net.webp"
-						alt="Taskforce Interim-Management Plattform"
-					/>
-				</a>
-			</div>
-			<div class="title">Taskforce</div>
-			<p>
-				Applicant management platform for interim management.<span class="note"
-					>On behalf of Me & Company GmbH</span
-				>
-			</p>
-			<Tag class="-small">Vue</Tag>
-			<Tag class="-small">Express</Tag>
-			<Tag class="-small">Sequelize</Tag>
-		</div>
-		<div class="item">
-			<div class="thumb">
-				<a href="https://www.bilstein.com" target="_blank">
-					<enhanced:img class="portrait" src="./bilstein.com.webp" alt="Bilstein Website" />
-				</a>
-			</div>
-			<div class="title">Bilstein</div>
-			<p>
-				Wordpress custom theme with Gutenberg Blocks.<span class="note"
-					>On behalf of Me & Company GmbH</span
-				>
-			</p>
-			<Tag class="-small">Wordpress</Tag>
-		</div>
-		<div class="item">
-			<div class="thumb">
-				<a href="https://motorsport.bilstein.com" target="_blank">
-					<enhanced:img
-						class="portrait"
-						src="./motorsport.bilstein.com.webp"
-						alt="Bilstein Motorsport Website"
-					/>
-				</a>
-			</div>
-			<div class="title">Bilstein Motorsport</div>
-			<p>
-				Marketing Landingpage with scrolling animations.<span class="note"
-					>On behalf of Me & Company GmbH</span
-				>
-			</p>
-			<Tag class="-small">Vue</Tag>
-			<Tag class="-small">GSAP</Tag>
-		</div>
-		<div class="item">
-			<div class="thumb">
-				<a href="https://www.me-company.de" target="_blank">
-					<enhanced:img class="portrait" src="./me-company.de.webp" alt="Me and Company Website" />
-				</a>
-			</div>
-			<div class="title">Me & Company</div>
-			<p>Wordpress custom theme.<span class="note">On behalf of Me & Company GmbH</span></p>
-			<Tag class="-small">Wordpress</Tag>
-		</div>
-        <div class="item">
-            <div class="thumb">
-                <a href="https://bikepacking-coach.de" target="_blank">
-                    <enhanced:img
-                        class="portrait"
-                        src="./bikepacking-coach.de.webp"
-                        alt="Bikepacking Coach Website"
-                    />
-                </a>
-            </div>
-            <div class="title">Bikepacking Coach (private)</div>
-            <p>Website with DaisyUI library.</p>
-            <Tag class="-small">Vue</Tag>
-        </div>
-		<div class="item">
-			<div class="thumb">
-				<a href="https://normacho.rocks" target="_blank">
-					<enhanced:img class="portrait" src="./normacho.rocks.webp" alt="Normacho Band Website" />
-				</a>
-			</div>
-			<div class="title">Normacho (private)</div>
-			<p>Website for my band.</p>
-			<Tag class="-small">Vue</Tag>
-		</div>
+		{/each}
 	</div>
 </div>
 
@@ -110,11 +45,15 @@
 		display: grid;
 		grid-template-columns: repeat(12, minmax(0, 1fr));
 		gap: 2rem;
-        row-gap: 4rem;
+		row-gap: 4rem;
 	}
 
 	.item {
 		grid-column: span 12;
+	}
+
+	.item :global(.tag):not(:last-child) {
+		margin-right: 0.25em;
 	}
 
 	.thumb {

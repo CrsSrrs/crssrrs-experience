@@ -4,6 +4,7 @@
 	import 'normalize.css';
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { t, initialized } from '$lib/translations';
 	let mql = false;
 
 	onMount(() => {
@@ -11,14 +12,18 @@
 	});
 </script>
 
-<Header />
+{#if $initialized}
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-{#if !mql}
-	<Footer />
+	{#if !mql}
+		<Footer />
+	{/if}
+{:else}
+	<div>Locale initializing...</div>
 {/if}
 
 <style>
@@ -51,12 +56,11 @@
 	@media (min-width: 1200px) {
 		main {
 			margin-left: 35%;
-			padding-top: 12em;
+			padding-top: 8em;
 			padding-bottom: 6em;
 			width: calc(100% - 35%);
 		}
 	}
-
 
 	@media screen and (min-width: 1600px) {
 		main {

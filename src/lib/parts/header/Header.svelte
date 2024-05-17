@@ -3,11 +3,16 @@
 	import Footer from '$lib/parts/footer/Footer.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { t, locales, locale } from '$lib/translations';
 	let mql = false;
 
 	onMount(() => {
 		mql = window.matchMedia('(min-width: 1200px)').matches;
 	});
+
+	function changeLocale(newLocale) {
+		$locale = newLocale;
+	}
 </script>
 
 <header>
@@ -17,14 +22,20 @@
 	<div class="inner">
 		<enhanced:img
 			class="portrait"
-			src="./christoph-schroers_320x320px_rund.png"
+			src="./christoph-schroers_320x320px_rund.webp"
 			alt="An alt text"
 		/>
-		<h2>Hi! I am Christoph,<br />Web Developer.</h2>
+		<h2>{$t('headline')}.</h2>
+		<h4 class="subheadline">{$t('profession')}</h4>
 		<nav>
-			<li><a href="/#skills" class:-active={$page.url.hash === '#skills'}>Skills</a></li>
-			<li><a href="/#work" class:-active={$page.url.hash === '#work'}>Work</a></li>
-			<li><a href="/#contact" class:-active={$page.url.hash === '#contact'}>Contact</a></li>
+			<li><a href="/#skills" class:-active={$page.url.hash === '#skills'}>{$t('nav.skills')}</a></li>
+			<li><a href="/#work" class:-active={$page.url.hash === '#work'}>{$t('nav.work')}</a></li>
+			<li><a href="/#contact" class:-active={$page.url.hash === '#contact'}>{$t('nav.contact')}</a></li>
+			<li class="language-switch">
+				{#each $locales as currentLocales}
+					<a class:-active={$locale === currentLocales} on:click={changeLocale(currentLocales)}>{currentLocales}</a>
+				{/each}
+			</li>
 		</nav>
 	</div>
 	{#if mql}
@@ -55,6 +66,15 @@
 		margin: 0 0 1em 0;
 	}
 
+	h2 {
+		margin-bottom: .15em;
+	}
+
+	h4 {
+		color: var(--text-light-color);
+		margin-bottom: 4em;
+	}
+
 	.portrait {
 		margin-bottom: 2em;
 		width: 10em;
@@ -62,7 +82,7 @@
 	}
 
 	nav {
-		margin-top: 4em;
+		margin-top: 2em;
 		font-size: 1.25em;
 		list-style: none;
 	}
@@ -76,6 +96,24 @@
 
 	a.-active {
 		color: var(--tertiary-color);
+	}
+
+	.language-switch a {
+		margin-top: .5em;
+		padding-top: 1.5em;
+		border-top: 2px solid var(--primary-lighter-color);
+		display: inline-block;
+
+		font-size: .75em;
+		cursor: pointer;
+
+		&:not(:first-child) {
+			padding-left: .25em;
+		}
+
+		&:not(:last-child) {
+			padding-right: .25em;
+		}
 	}
 
 	@media screen and (min-width: 900px) {

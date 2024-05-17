@@ -2,6 +2,8 @@
 	import Intro from '$lib/modules/intro/Intro.svelte';
 	import Portfolio from '$lib/modules/portfolio/Portfolio.svelte';
 	import Skills from '$lib/modules/skills/Skills.svelte';
+
+	import { t } from '$lib/translations';
 </script>
 
 <svelte:head>
@@ -9,44 +11,39 @@
 	<meta name="description" content="Christoph Schrörs Web Development" />
 </svelte:head>
 
-<Intro>
-	<h1>
-		Full-Stack is my <pre>profession.</pre>
-		<br />Frontend is my
-		<pre>passion.</pre>
-	</h1>
-</Intro>
+<section class="what">
+	<h1>{$t('what.headline')}</h1>
+	<h3 class="subheadline">{$t('what.subheadline')}</h3>
+	{#each $t('what.paragraphs') as paragraph}
+		<p>{paragraph}</p>
+	{/each}
+</section>
+
 <section class="why">
-	<p>
-		I want people to feel something by the things I create. With love for detail, passion for UI
-		effects and dedication to intuitive user experience, the things I create come to life.
-	</p>
-	<p>
-		I am an expert for <b>Vue.js</b> and <b>Wordpress</b>. I strive to learn and use new
-		technologies.
+	<h2>
+		{@html $t('intro.headline')}
+	</h2>
+	<p class="motivation">
+		{$t('why.motivation')}
 	</p>
 </section>
+
 <section class="how" id="skills">
 	<Skills />
 </section>
 
 <section class="portfolio" id="work">
-	<h3>Recent work</h3>
+	<h3>{$t('work.headline')}</h3>
 	<Portfolio />
 </section>
 
 <section class="contact" id="contact">
-	<h3>Get in touch</h3>
+	<h3>{$t('contact.headline')}</h3>
 	<p>
-		In collaboration I always think along, question critically and like to contribute with my own
-		ideas. I can also act in an advisory role when finding solutions.
+		{$t('contact.paragraph1')}
 	</p>
 	<p>
-		I am based in Germany. I travel by bike. I challenge me with triathlons. I absolutely love
-		music. I play games.
-	</p>
-	<p>
-		Feel free to contact me: <a href="mailto:dev@christophschroers.de">dev@christophschroers.de</a>
+		{$t('contact.paragraph2')} <a href="mailto:dev@christophschroers.de">dev@christophschroers.de</a>
 	</p>
 </section>
 
@@ -56,6 +53,11 @@
 		width: 100%;
 	}
 
+	h3.subheadline {
+		margin-bottom: 2.5em;
+	}
+
+
 	section:not(:last-child) {
 		border-bottom: 2px solid var(--primary-light-color);
 		padding-bottom: 5em;
@@ -63,6 +65,28 @@
 
 	section:not(:first-child) {
 		padding-top: 5em;
+	}
+
+	.why {
+		justify-content: center;
+		/* align-items: center; */
+
+		position: relative;
+	}
+
+	.why :global(pre) {
+		display: inline;
+		color: var(--tertiary-color);
+	}
+
+	.why h2 {
+		/* color: var(--text-light-color); */
+	}
+
+	.motivation {
+		/* max-width: 750px; */
+		/* text-align: center; */
+		color: var(--text-light-color);
 	}
 
 	.contact {
