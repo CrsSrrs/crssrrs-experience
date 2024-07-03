@@ -57,12 +57,12 @@
 </section>
 
 <style>
-	h1 {
+	.what h1 {
         margin-bottom: 0;
 		width: 100%;
 	}
 
-	h3.subheadline {
+	.what .subheadline {
 		margin-bottom: 2.5em;
 	}
 
@@ -77,15 +77,6 @@
 
 	.what p {
 		font-size: 1.4rem;
-	}
-
-	.why :global(pre) {
-		display: inline;
-		color: var(--tertiary-color);
-	}
-
-	.why h2 {
-		margin-bottom: 0.5em;
 	}
 
 	.contact {
