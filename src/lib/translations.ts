@@ -5,14 +5,14 @@ const config: Config<Config> = {
   preprocess: 'preserveArrays',
   loaders: [
     {
-      locale: 'en',
-      key: '',
-      loader: async () => (await import('./lang/en.json')).default
-    },
-    {
       locale: 'de',
       key: '',
       loader: async () => (await import('./lang/de.json')).default
+    },
+    {
+      locale: 'en',
+      key: '',
+      loader: async () => (await import('./lang/en.json')).default
     },
   ]
 };

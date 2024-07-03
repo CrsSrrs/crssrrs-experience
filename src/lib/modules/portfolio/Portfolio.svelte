@@ -87,12 +87,12 @@
 		margin-bottom: 0.75em;
 		margin-top: 1.25em;
 
-		font-size: 1.25em;
+		font-size: 1.3em;
 		font-weight: 600;
 	}
 
 	p {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	.note {

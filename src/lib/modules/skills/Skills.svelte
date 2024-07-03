@@ -15,7 +15,7 @@
         <li><Tag>HTML5</Tag></li>
         <li><Tag>CSS3</Tag></li>
         <li><Tag>SASS</Tag></li>
-        <li><Tag>SQL</Tag></li>
+        <li><Tag>MySQL</Tag></li>
         <li><Tag>{$t('languages.de')}</Tag></li>
         <li><Tag>{$t('languages.en')}</Tag></li>
     </ul>
@@ -25,13 +25,13 @@
     </h4>
     <ul>
         <li><Tag>Vue</Tag></li>
-        <li><Tag>Wordpress</Tag></li>
         <li><Tag>Svelte</Tag></li>
+        <li><Tag>Node</Tag></li>
+        <li><Tag>Express</Tag></li>
         <li><Tag>Nest</Tag></li>
         <li><Tag>Adonis</Tag></li>
-        <li><Tag>Express</Tag></li>
-        <li><Tag>Node</Tag></li>
         <li><Tag>Laravel</Tag></li>
+        <li><Tag>Wordpress</Tag></li>
     </ul>
     <h4>
         <span class="line-indicator">~/skills</span>
@@ -41,7 +41,6 @@
         <li><Tag>Git</Tag></li>
         <li><Tag>Vite</Tag></li>
         <li><Tag>Webpack</Tag></li>
-        <li><Tag>Twig</Tag></li>
         <li><Tag>Sequelize</Tag></li>
         <li><Tag>Prisma</Tag></li>
         <li><Tag>Nginx</Tag></li>
@@ -55,9 +54,9 @@
     <ul>
         <li><Tag>Agile</Tag></li>
         <li><Tag>Atomic Design</Tag></li>
-        <li><Tag>Clean Code</Tag></li>
-        <li><Tag>Responsive</Tag></li>
         <li><Tag>Animations</Tag></li>
+        <li><Tag>Responsive</Tag></li>
+        <li><Tag>Clean Code</Tag></li>
         <li><Tag>MVC</Tag></li>
         <li><Tag>SOA</Tag></li>
         <li><Tag>REST</Tag></li>

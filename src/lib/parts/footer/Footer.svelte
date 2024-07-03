@@ -6,9 +6,7 @@
 <footer>
 	<Divider />
     <div class="_wrapper">
-        <p>
-            <a href="/imprint" class="link">Imprint</a>
-        </p>
+		<p class="legal">© {new Date().getFullYear()} Christoph Schrörs. All rights reserved.</p>
         <p class="text-center">
             <Social />
         </p>
@@ -33,16 +31,12 @@
 		justify-content: space-between;
 	}
 
-	.link {
+	.legal {
 		margin-right: 1em;
-		font-size: 0.75em;
+		font-size: 0.8em;
 		display: inline-block;
 
-		color: var(--text-color);
-	}
-
-	.link:hover {
-		color: var(--accent-color);
+		color: var(--text-light-color);
 	}
 
     @media screen and (max-width: 600px) {

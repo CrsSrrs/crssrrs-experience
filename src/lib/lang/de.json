@@ -8,21 +8,11 @@
 		"contact": "Kontakt"
 	},
 
-	"intro": {
-		"headline": "<pre>Full-Stack</pre> ist meine Profession.<br /><pre>Frontend</pre> ist meine Leidenschaft."
-	},
-
-	"why": {
-		"motivation": "Mit Liebe zum Detail, Leidenschaft für UI-Effekte und Hingabe zur intuitiven Benutzererfahrung möchte ich Dinge zum Leben erwecken."
-	},
-
 	"what": {
 		"headline": "Full-Stack Entwicklung bei Düsseldorf",
 		"subheadline": "Experte für Vue.js, Node.js und WordPress",
 		"paragraphs": [
-			"Als freiberuflicher Full-Stack Entwickler unterstütze ich bei der Frontend-Entwicklung und Backend-Entwicklung. Ich bin spezialisiert auf Vue.js, Node.js und WordPress. Seit über 10 Jahren bin ich als Web-Entwickler tätig.",
-			"Durch meine kreative Ader bin ich leidenschaftlicher Frontend-Entwickler. Ich habe ein Gefühl für gutes UX & UI und ein Auge für Pixel-Perfektion.",
-			"Als Backend-Entwickler lebe ich meinen analytisch-technischen Charakter aus. Die Konzipierung und Umsetzung von Software-Architekturen erfüllt mich sowie die Lösung komplexer Probleme."
+			"Als Full-Stack Entwickler unterstütze ich bei der Frontend-Entwicklung und der Backend-Entwicklung von Webseiten und Web-Apps. Ich bin Experte für Vue.js im Frontend, Node.js Backends und WordPress als CMS Lösung."
 		]
 	},
 
@@ -31,6 +21,14 @@
 		"frameworks": "Frameworks",
 		"tools": "Tools",
 		"methods": "Methoden"
+	},
+
+	"why": {
+		"headline": "<pre>Full-Stack</pre> ist meine Profession.<br /><pre>Frontend</pre> ist meine Leidenschaft.",
+		"paragraphs": [
+			"Durch meine kreative Ader bin ich leidenschaftlicher Frontend-Entwickler. Ich habe ein gutes Gefühl für UX, UI und Animationen und ein Auge für Pixel-Perfektion. Mit Liebe zum Detail, erwecke ich Dinge zum Leben.",
+			"Als Backend-Entwickler lebe ich meinen analytisch-technischen Charakter aus. Die Konzipierung und Umsetzung von Software-Architekturen erfüllt mich sowie die Lösung komplexer Probleme."
+		]
 	},
 
 	"work": {
@@ -60,7 +58,7 @@
 				"link": "https://www.bilstein.com",
 				"img": "bilstein.com.webp",
 				"imgAlt": "Bilstein Website",
-				"tags": ["Wordpress"]
+				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bilstein Motorsport",
@@ -78,7 +76,7 @@
 				"link": "https://www.me-company.de",
 				"img": "me-company.de.webp",
 				"imgAlt": "Me and Company Website",
-				"tags": ["Wordpress"]
+				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bikepacking Coach",
@@ -101,10 +99,18 @@
 		]
 	},
 
+	"about": {
+		"headline": "Über mich",
+		"paragraphs": [
+			"Ich bin Christoph, 1990 geboren, lebe bei Düsseldorf und bin als Web-Entwickler tätig seit 2012. Ich arbeitete für Me & Company in Düsseldorf, anfangs nebenbei zu meinem Medien-Informatik Studium (wobei, eigentlich habe ich eher nebenbei studiert :D) und seit 2017 in Vollzeit. Bis ich mich Ende 2022 als Freelancer in Vollzeit selbstständig gemacht habe.",
+			"Meine kreative Ader lebe ich abseits vom Coden als Bassist in einer Band aus. Ich liebe es, mit dem Rad unterwegs zu sein und damit zu reisen (Bikepacking). Um mich zu challengen, mache ich Triathlon. Ich spiele gerne Videospiele, vor allem Indie-Games."
+		]
+	},
+
 	"contact": {
 		"headline": "Kontakt",
-		"paragraph1": "In der Zusammenarbeit denke ich mit, hinterfrage kritisch und bringe mich gerne mit eigenen Ideen ein. Auch beratend unterstütze ich gerne bei der Lösungsfindung.",
-		"paragraph2": "Kontaktiere mich gerne:"
+		"paragraph1": "In der Zusammenarbeit denke ich mit, hinterfrage kritisch und bringe mich mit eigenen Ideen ein. Auch unterstütze ich gerne beratend bei der Lösungsfindung.",
+		"paragraph2": "Kontaktiere mich gerne unter"
 	},
 
 	"languages": {

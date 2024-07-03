@@ -8,22 +8,11 @@
 		"contact": "Contact"
 	},
 
-	"intro": {
-		"headline": "<pre>Full-Stack</pre> is my profession.<br /><pre>Frontend</pre> is my passion."
-	},
-
-	"why": {
-		"motivation": "I want people to feel something by the things I create. With love for detail, passion for UI effects and dedication to intuitive user experience, the things I create come to life."
-	},
-
 	"what": {
 		"headline": "Full-Stack Development near Düsseldorf",
 		"subheadline": "Expert for Vue.js and WordPress",
 		"paragraphs": [
-			"I am a freelance full-stack developer, live near Düsseldorf, and specialize in Vue.js and WordPress. I have been working as a web developer for over 10 years.",
-			"My creative nature makes me a passionate front-end developer. I have a feel for good UX & UI and an eye for pixel perfection.",
-			"I put my analytical and technical character into practice in backend development. I enjoy designing and implementing software architectures and solving complex problems.",
-			"Thanks to my high level of comprehension, I learn quickly and enjoy using new technologies."
+			"As a full-stack developer, I support frontend development and backend development of websites and web apps. I am an expert for Vue.js in frontend, Node.js backends and Wordpress as CMS solution."
 		]
 	},
 
@@ -32,6 +21,14 @@
 		"frameworks": "Frameworks",
 		"tools": "Tools",
 		"methods": "Methodologies"
+	},
+
+	"why": {
+		"headline": "<pre>Full-Stack</pre> is my profession.<br /><pre>Frontend</pre> is my passion.",
+		"paragraphs": [
+			"My creative nature makes me a passionate front-end developer. I have a good feeling for UX, UI and Animations and an eye for pixel perfection. With attention to detail, i create things that come to life.",
+			"I put my analytical and technical character into practice in backend development. I enjoy designing and implementing software architectures and solving complex problems."
+		]
 	},
 
 	"work": {
@@ -61,7 +58,7 @@
 				"link": "https://www.bilstein.com",
 				"img": "bilstein.com.webp",
                 "imgAlt": "Bilstein Website",
-				"tags": ["Wordpress"]
+				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bilstein Motorsport",
@@ -79,7 +76,7 @@
 				"link": "https://www.me-company.de",
 				"img": "me-company.de.webp",
                 "imgAlt": "Me and Company Website",
-				"tags": ["Wordpress"]
+				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bikepacking Coach",
@@ -101,12 +98,19 @@
 			}
 		]
 	},
+
+	"about": {
+		"headline": "About me",
+		"paragraphs": [
+			"I am Christoph, born 1990, live near Düsseldorf, Germany, working as a web developer since 2012. I worked for Me & Company in Düsseldorf, initially alongside my media informatics studies (well, i actually studied part-time :D) and full-time since 2017. Until i became a full-time freelancer at the end of 2022",
+			"Besides from coding, I live out my creative nature as a bass player in a band. I absolutely love cycling and traveling by bike (bikepacking). I challenge me with triathlons. I like to play video games, especially indie games."
+		]
+	},
 	
 	"contact": {
         "headline": "Get in touch",
         "paragraph1": "In collaboration I always think along, question critically and like to contribute with my own ideas. I can also act in an advisory role when finding solutions.",
-        "paragraph2": "I am based in Germany, NRW, near Düsseldorf. I travel by bike. I challenge me with triathlons. I absolutely love music. I play videogames.",
-        "paragraph3": "Feel free to contact me:"
+        "paragraph3": "Feel free to contact me at"
     },
 
 	"languages": {

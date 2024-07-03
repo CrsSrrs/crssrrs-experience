@@ -19,22 +19,31 @@
 	{/each}
 </section>
 
-<section class="why">
-	<h2>
-		{@html $t('intro.headline')}
-	</h2>
-	<p class="motivation">
-		{$t('why.motivation')}
-	</p>
-</section>
-
 <section class="how" id="skills">
 	<Skills />
+</section>
+
+<section class="why">
+	<h2>
+		{@html $t('why.headline')}
+	</h2>
+	{#each $t('why.paragraphs') as paragraph}
+		<p>{paragraph}</p>
+	{/each}
 </section>
 
 <section class="portfolio" id="work">
 	<h3>{$t('work.headline')}</h3>
 	<Portfolio />
+</section>
+
+<section class="about">
+	<h3>
+		{$t('about.headline')}
+	</h3>
+	{#each $t('about.paragraphs') as paragraph}
+		<p>{paragraph}</p>
+	{/each}
 </section>
 
 <section class="contact" id="contact">
@@ -57,7 +66,6 @@
 		margin-bottom: 2.5em;
 	}
 
-
 	section:not(:last-child) {
 		border-bottom: 2px solid var(--primary-light-color);
 		padding-bottom: 5em;
@@ -67,11 +75,8 @@
 		padding-top: 5em;
 	}
 
-	.why {
-		justify-content: center;
-		/* align-items: center; */
-
-		position: relative;
+	.what p {
+		font-size: 1.4rem;
 	}
 
 	.why :global(pre) {
@@ -80,13 +85,7 @@
 	}
 
 	.why h2 {
-		/* color: var(--text-light-color); */
-	}
-
-	.motivation {
-		/* max-width: 750px; */
-		/* text-align: center; */
-		color: var(--text-light-color);
+		margin-bottom: 0.5em;
 	}
 
 	.contact {
