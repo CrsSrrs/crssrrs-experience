@@ -1,15 +1,12 @@
 <script>
-	import Social from '$lib/modules/social/Social.svelte';
 	import Divider from '$lib/modules/divider/Divider.svelte';
 </script>
 
 <footer>
 	<Divider />
     <div class="_wrapper">
-		<p class="legal">© {new Date().getFullYear()} Christoph Schrörs. All rights reserved.</p>
-        <p class="text-center">
-            <Social />
-        </p>
+		<p class="_legal">© {new Date().getFullYear()} Christoph Schrörs. All rights reserved.</p>
+        <p class="text-center"></p>
     </div>
 </footer>
 
@@ -17,21 +14,20 @@
 	footer {
 		padding: 0 2rem;
 		width: 100%;
-		max-width: 900px;
 		margin: 0 auto;
-		box-sizing: border-box;
 	}
 
 	._wrapper {
 		padding-top: 1em;
-		padding-bottom: 1em;
+		padding-bottom: 2em;
 		flex: 1;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		flex-direction: column-reverse;
+		justify-content: center;
 	}
 
-	.legal {
+	._legal {
+		margin-top: 1em;
 		margin-right: 1em;
 		font-size: 0.8em;
 		display: inline-block;
@@ -39,16 +35,37 @@
 		color: var(--text-light-color);
 	}
 
-    @media screen and (max-width: 600px) {
-        footer div {
-            flex-direction: column;
-            justify-content: center;
+    @media screen and (min-width: 600px) {
+        ._wrapper {
+            flex-direction: row;
+            justify-content: space-between;
         }
+
+		._legal {
+			margin-top: 0em;
+			margin-bottom: 0;
+			margin-right: 0;
+		}
     }
 
-	@media screen and (min-width: 1200px) {
+	@media (min-width: 900px) {
 		footer {
-			padding: 0;
+			padding-left: 4em;
+			padding-right: 4em;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		footer {
+			margin-left: 35%;
+			width: calc(100% - 35%);
+		}
+	}
+
+	@media screen and (min-width: 1600px) {
+		footer {
+			padding-left: 6em;
+			padding-right: 6em;
 		}
 	}
 </style>

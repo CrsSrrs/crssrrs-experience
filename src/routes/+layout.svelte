@@ -3,13 +3,7 @@
 	import Footer from '$lib/parts/footer/Footer.svelte';
 	import 'normalize.css';
 	import '../app.css';
-	import { onMount } from 'svelte';
 	import { t, initialized } from '$lib/translations';
-	let mql = false;
-
-	onMount(() => {
-		mql = window.matchMedia('(min-width: 1200px)').matches;
-	});
 </script>
 
 {#if $initialized}
@@ -19,9 +13,7 @@
 		<slot />
 	</main>
 
-	{#if !mql}
-		<Footer />
-	{/if}
+	<Footer />
 {:else}
 	<div>Locale initializing...</div>
 {/if}

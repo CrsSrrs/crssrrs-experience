@@ -1,14 +1,8 @@
 <script>
 	import Logo from '$lib/atoms/Logo/Logo.svelte';
-	import Footer from '$lib/parts/footer/Footer.svelte';
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
 	import { t, locales, locale } from '$lib/translations';
-	let mql = false;
-
-	onMount(() => {
-		mql = window.matchMedia('(min-width: 1200px)').matches;
-	});
+	import Social from '$lib/modules/social/Social.svelte';
 
 	function changeLocale(newLocale) {
 		$locale = newLocale;
@@ -38,9 +32,9 @@
 			</li>
 		</nav>
 	</div>
-	{#if mql}
-		<Footer />
-	{/if}
+	<div class="foot">
+		<Social />
+	</div>
 </header>
 
 <style>
@@ -72,7 +66,7 @@
 
 	h4 {
 		color: var(--text-light-color);
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 	}
 
 	.portrait {
@@ -82,7 +76,8 @@
 	}
 
 	nav {
-		margin-top: 2em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 		font-size: 1.25em;
 		list-style: none;
 	}
@@ -98,10 +93,12 @@
 		color: var(--tertiary-color);
 	}
 
+	.language-switch {
+		display: block;
+	}
+
 	.language-switch a {
 		margin-top: .5em;
-		padding-top: 1.5em;
-		border-top: 2px solid var(--primary-lighter-color);
 		display: inline-block;
 
 		font-size: .75em;

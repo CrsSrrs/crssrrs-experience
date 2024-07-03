@@ -10,9 +10,15 @@
 
 <style>
     .social {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
 		color: var(--text-color);
+
+		&:not(:first-child) {
+        	margin-left: 0.5em;
+		}
+
+		&:not(:last-child) {
+        	margin-right: 0.5em;
+		}
 	}
 
 	.social :global(svg) {
