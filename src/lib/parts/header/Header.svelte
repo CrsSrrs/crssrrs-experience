@@ -27,7 +27,7 @@
 			<li><a href="/#contact" class:-active={$page.url.hash === '#contact'}>{$t('nav.contact')}</a></li>
 			<li class="language-switch">
 				{#each $locales as currentLocales}
-					<a class:-active={$locale === currentLocales} on:click={changeLocale(currentLocales)}>{currentLocales}</a>
+					<button type="button" class:-active={$locale === currentLocales} on:click={changeLocale(currentLocales)}>{currentLocales}</button>
 				{/each}
 			</li>
 		</nav>
@@ -97,11 +97,18 @@
 		display: block;
 	}
 
-	.language-switch a {
-		margin-top: .5em;
+	.language-switch button {
+		padding: 1em 0;
 		display: inline-block;
 
+		background: none;
+		appearance: none;
+		border: none;
+		border-top: 2px solid var(--primary-lighter-color);
+
+		color: var(--text-light-color);
 		font-size: .75em;
+		font-weight: 400;
 		cursor: pointer;
 
 		&:not(:first-child) {
@@ -110,6 +117,10 @@
 
 		&:not(:last-child) {
 			padding-right: .25em;
+		}
+
+		&.-active {
+			color: var(--tertiary-color);
 		}
 	}
 
