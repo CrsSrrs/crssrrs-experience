@@ -24,9 +24,9 @@
 </section>
 
 <section class="why">
-	<h2>
+	<h3>
 		{@html $t('why.headline')}
-	</h2>
+	</h3>
 	{#each $t('why.paragraphs') as paragraph}
 		<p>{paragraph}</p>
 	{/each}
@@ -52,13 +52,14 @@
 		{$t('contact.paragraph1')}
 	</p>
 	<p>
-		{$t('contact.paragraph2')} <a href="mailto:dev@christophschroers.de">dev@christophschroers.de</a>
+		{$t('contact.paragraph2')}
+		<a href="mailto:dev@christophschroers.de">dev@christophschroers.de</a>
 	</p>
 </section>
 
 <style>
 	.what h1 {
-        margin-bottom: 0;
+		margin-bottom: 0;
 		width: 100%;
 	}
 
@@ -68,11 +69,11 @@
 
 	section:not(:last-child) {
 		border-bottom: 2px solid var(--primary-light-color);
-		padding-bottom: 5em;
+		padding-bottom: 3.5em;
 	}
 
 	section:not(:first-child) {
-		padding-top: 5em;
+		padding-top: 3.5em;
 	}
 
 	.what p {

@@ -9,10 +9,11 @@
 	},
 
 	"what": {
-		"headline": "Full-Stack Development near Düsseldorf",
-		"subheadline": "Expert for Vue.js and WordPress",
+		"headline": "Full Stack Development near Düsseldorf",
+		"subheadline": "Expert for Vue.js, Laravel and WordPress",
 		"paragraphs": [
-			"As a full-stack developer, I support frontend development and backend development of websites and web apps. I am an expert for Vue.js in frontend, Node.js backends and Wordpress as CMS solution."
+			"As a full-stack developer, I support frontend development and backend development of websites and web apps. I am an expert for Vue.js in frontend, Node.js backends and Wordpress as CMS solution.",
+			"Darüber hinaus arbeite ich mich schnell in neue Technologien ein – damit du nicht den „perfekten Stack“, sondern die beste Lösung bekommst."
 		]
 	},
 
@@ -39,61 +40,61 @@
 				"description": "Theme for company and game specific pages.",
 				"link": "https://hovgaard.com",
 				"img": "hovgaard.com.webp",
-                "imgAlt": "Hovgaard Website",
+				"imgAlt": "Hovgaard Website",
 				"tags": ["Vitepress", "Vue"]
 			},
 			{
 				"title": "Taskforce",
 				"description": "Applicant management platform for interim management.",
-                "note": "On behalf of Me & Company GmbH",
+				"note": "On behalf of Me & Company GmbH",
 				"link": "https://interim.taskforce.net",
 				"img": "taskforce.net.webp",
-                "imgAlt": "Taskforce Interim-Management Plattform",
+				"imgAlt": "Taskforce Interim-Management Plattform",
 				"tags": ["Vue", "Express", "Sequelize"]
 			},
 			{
 				"title": "Bilstein",
 				"description": "Wordpress custom theme with Gutenberg Blocks.",
-                "note": "On behalf of Me & Company GmbH",
+				"note": "On behalf of Me & Company GmbH",
 				"link": "https://www.bilstein.com",
 				"img": "bilstein.com.webp",
-                "imgAlt": "Bilstein Website",
+				"imgAlt": "Bilstein Website",
 				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bilstein Motorsport",
 				"description": "Marketing Landingpage with scrolling animations.",
-                "note": "On behalf of Me & Company GmbH",
+				"note": "On behalf of Me & Company GmbH",
 				"link": "https://motorsport.bilstein.com",
 				"img": "motorsport.bilstein.com.webp",
-                "imgAlt": "Bilstein Motorsport Website",
+				"imgAlt": "Bilstein Motorsport Website",
 				"tags": ["Vue", "GSAP"]
 			},
 			{
 				"title": "Me & Company",
 				"description": "Wordpress custom theme.",
-                "note": "On behalf of Me & Company GmbH",
+				"note": "On behalf of Me & Company GmbH",
 				"link": "https://www.me-company.de",
 				"img": "me-company.de.webp",
-                "imgAlt": "Me and Company Website",
+				"imgAlt": "Me and Company Website",
 				"tags": ["Wordpress", "JavaScript", "SASS"]
 			},
 			{
 				"title": "Bikepacking Coach",
 				"description": "Website with DaisyUI library.",
-                "note": "Private project",
+				"note": "Private project",
 				"link": "https://bikepacking-coach.de",
 				"img": "bikepacking-coach.de.webp",
-                "imgAlt": "Bikepacking Coach Website",
+				"imgAlt": "Bikepacking Coach Website",
 				"tags": ["Vue"]
 			},
 			{
 				"title": "Normacho",
 				"description": "Website for my band.",
-                "note": "Private project",
+				"note": "Private project",
 				"link": "https://normacho.rocks",
 				"img": "normacho.rocks.webp",
-                "imgAlt": "Normacho Band Website",
+				"imgAlt": "Normacho Band Website",
 				"tags": ["Vue"]
 			}
 		]
@@ -106,12 +107,12 @@
 			"Besides from coding, I live out my creative nature as a bass player in a band. I absolutely love cycling and traveling by bike (bikepacking). I challenge me with triathlons. I like to play video games, especially indie games."
 		]
 	},
-	
+
 	"contact": {
-        "headline": "Get in touch",
-        "paragraph1": "In collaboration I always think along, question critically and like to contribute with my own ideas. I can also act in an advisory role when finding solutions.",
-        "paragraph2": "Feel free to contact me at"
-    },
+		"headline": "Get in touch",
+		"paragraph1": "In collaboration I always think along, question critically and like to contribute with my own ideas. I can also act in an advisory role when finding solutions.",
+		"paragraph2": "Feel free to contact me at"
+	},
 
 	"languages": {
 		"de": "German",

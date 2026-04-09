@@ -9,10 +9,11 @@
 	},
 
 	"what": {
-		"headline": "Full-Stack Entwicklung bei Düsseldorf",
-		"subheadline": "Experte für Vue.js, Node.js und WordPress",
+		"headline": "Fullstack Entwicklung bei Düsseldorf",
+		"subheadline": "Experte für Vue.js, Laravel und WordPress",
 		"paragraphs": [
-			"Als Full-Stack Entwickler unterstütze ich bei der Frontend-Entwicklung und der Backend-Entwicklung von Webseiten und Web-Apps. Ich bin Experte für Vue.js im Frontend, Node.js Backends und WordPress als CMS Lösung."
+			"Als Full-Stack Entwickler unterstütze ich bei der Frontend-Entwicklung und der Backend-Entwicklung von Webseiten und Web-Apps. Ich bin Experte für Vue.js im Frontend, Laravel Backends und WordPress als CMS Lösung.",
+			"Darüber hinaus arbeite ich mich schnell in neue Technologien ein – damit du nicht den „perfekten Stack“, sondern die beste Lösung bekommst."
 		]
 	},
 
@@ -24,16 +25,31 @@
 	},
 
 	"why": {
-		"headline": "<pre>Full-Stack</pre> ist meine Profession.<br /><pre>Frontend</pre> ist meine Leidenschaft.",
+		"headline": "Fullstack ist meine Profession. Frontend ist meine Leidenschaft.",
 		"paragraphs": [
-			"Durch meine kreative Ader bin ich leidenschaftlicher Frontend-Entwickler. Ich habe ein gutes Gefühl für UX, UI und Animationen und ein Auge für Pixel-Perfektion. Mit Liebe zum Detail, erwecke ich Dinge zum Leben.",
-			"Als Backend-Entwickler lebe ich meinen analytisch-technischen Charakter aus. Die Konzipierung und Umsetzung von Software-Architekturen erfüllt mich sowie die Lösung komplexer Probleme."
+			"Ich habe eine große Leidenschaft für UI-Effekte, Animationen und intuitive Benutzererfahrungen. Dabei lege ich viel Wert auf sauberes UX/UI und arbeite gerne pixelgenau.",
+			"Gleichzeitig reizt mich die technische Seite genauso: komplexe Probleme lösen, Business-Logik durchdenken und stabile Systeme bauen."
 		]
 	},
 
 	"work": {
 		"headline": "Letzte Projekte",
 		"projects": [
+			{
+				"title": "Fahrzeug Portal",
+				"description": "Middleware für den Import von Fahrzeugdaten und Bereitstellung der Daten per REST-API.",
+				"img": "vehicles.bilstein.com.webp",
+				"imgAlt": "Bilstein Website",
+				"tags": ["Laravel", "REST-API"]
+			},
+			{
+				"title": "Hejscore",
+				"description": "Multi-Tenant Plattform zur Bewertung der Reife von Teams und zur Unterstützung der Führungskräfte durch individuelle Umfragen",
+				"link": "https://hejscore.com",
+				"img": "app.hejscore.com.webp",
+				"imgAlt": "Hejscore App",
+				"tags": ["Laravel", "Vue", "PrimeVue"]
+			},
 			{
 				"title": "Hovgaard Games",
 				"description": "Umsetzung der Unternehmens- und Produkt-Webseiten im einheitlichen Theme.",
@@ -102,14 +118,13 @@
 	"about": {
 		"headline": "Über mich",
 		"paragraphs": [
-			"Ich bin Christoph, 1990 geboren, lebe bei Düsseldorf und bin seit 2012 als Web-Entwickler tätig. Ich war bei Me & Company in Düsseldorf angestellt, anfangs nebenbei zu meinem Medien-Informatik Studium (wobei, eigentlich habe ich eher nebenbei studiert :D) und ab 2017 in Vollzeit. Bis ich mich Ende 2022 als Freelancer in Vollzeit selbstständig gemacht habe.",
-			"Abseits vom Coden lebe ich meine kreative Ader als Bassist in einer Band aus. Ich liebe es, mit dem Rad unterwegs zu sein und damit zu reisen (Bikepacking). Ich mache Ausdauer-Sport (Triathlon) um mich zu challengen. Ich spiele gerne Videospiele, besonders Indie-Games."
+			"Ich bin Christoph, lebe bei Düsseldorf und arbeite seit 2012 als Webentwickler. Nach meinem Studium der Medieninformatik war ich insgesamt 9 Jahre bei Me & Company tätig. Seit Ende 2022 bin ich als Freelancer in Vollzeit selbstständig."
 		]
 	},
 
 	"contact": {
 		"headline": "Kontakt",
-		"paragraph1": "In der Zusammenarbeit denke ich mit, hinterfrage kritisch und bringe mich mit eigenen Ideen ein. Auch unterstütze ich gerne beratend bei der Lösungsfindung.",
+		"paragraph1": "In der Zusammenarbeit denke ich aktiv mit, hinterfrage Dinge kritisch und bringe gerne eigene Ideen ein. Ich unterstütze nicht nur bei der Umsetzung, sondern auch bei der Lösungsfindung.",
 		"paragraph2": "Kontaktiere mich gerne unter"
 	},
 

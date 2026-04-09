@@ -1,71 +1,65 @@
 <script>
-    import Tag from "$lib/atoms/Tag/Tag.svelte";
+	import Tag from '$lib/atoms/Tag/Tag.svelte';
 	import { t } from '$lib/translations';
 </script>
 
 <div class="skills">
-    <h4>
-        <span class="line-indicator">~/skills</span>
-        <span class="skill-head">{$t('skills.languages')}</span>
-    </h4>
-    <ul>
-        <li><Tag>JavaScript</Tag></li>
-        <li><Tag>TypeScript</Tag></li>
-        <li><Tag>PHP</Tag></li>
-        <li><Tag>HTML5</Tag></li>
-        <li><Tag>CSS3</Tag></li>
-        <li><Tag>SASS</Tag></li>
-        <li><Tag>MySQL</Tag></li>
-        <li><Tag>{$t('languages.de')}</Tag></li>
-        <li><Tag>{$t('languages.en')}</Tag></li>
-    </ul>
-    <h4>
-        <span class="line-indicator">~/skills</span>
-        <span class="skill-head">{$t('skills.frameworks')}</span>
-    </h4>
-    <ul>
-        <li><Tag>Vue</Tag></li>
-        <li><Tag>Svelte</Tag></li>
-        <li><Tag>Node</Tag></li>
-        <li><Tag>Express</Tag></li>
-        <li><Tag>Nest</Tag></li>
-        <li><Tag>Adonis</Tag></li>
-        <li><Tag>Laravel</Tag></li>
-        <li><Tag>Wordpress</Tag></li>
-    </ul>
-    <h4>
-        <span class="line-indicator">~/skills</span>
-        <span class="skill-head">{$t('skills.tools')}</span>
-    </h4>
-    <ul>
-        <li><Tag>Git</Tag></li>
-        <li><Tag>Vite</Tag></li>
-        <li><Tag>Webpack</Tag></li>
-        <li><Tag>Sequelize</Tag></li>
-        <li><Tag>Prisma</Tag></li>
-        <li><Tag>Nginx</Tag></li>
-        <li><Tag>Apache</Tag></li>
-        <li><Tag>Bash</Tag></li>
-    </ul>
-    <h4>
-        <span class="line-indicator">~/skills</span>
-        <span class="skill-head">{$t('skills.methods')}</span>
-    </h4>
-    <ul>
-        <li><Tag>Agile</Tag></li>
-        <li><Tag>Atomic Design</Tag></li>
-        <li><Tag>Animations</Tag></li>
-        <li><Tag>Responsive</Tag></li>
-        <li><Tag>Clean Code</Tag></li>
-        <li><Tag>MVC</Tag></li>
-        <li><Tag>SOA</Tag></li>
-        <li><Tag>REST</Tag></li>
-        <li><Tag>CI/CD</Tag></li>
-    </ul>
+	<h4>
+		<span class="line-indicator">~/skills</span>
+		<span class="skill-head">{$t('skills.languages')}</span>
+	</h4>
+	<ul>
+		<li><Tag class="-highlight">JavaScript</Tag></li>
+		<li><Tag class="-highlight">PHP</Tag></li>
+		<li><Tag>TypeScript</Tag></li>
+		<li><Tag>SQL</Tag></li>
+		<li><Tag>Bash</Tag></li>
+		<li><Tag>{$t('languages.de')}</Tag></li>
+		<li><Tag>{$t('languages.en')}</Tag></li>
+	</ul>
+	<h4>
+		<span class="line-indicator">~/skills</span>
+		<span class="skill-head">{$t('skills.frameworks')}</span>
+	</h4>
+	<ul>
+		<li><Tag class="-highlight">Vue</Tag></li>
+		<li><Tag class="-highlight">Laravel</Tag></li>
+		<li><Tag class="-highlight">Wordpress</Tag></li>
+		<li><Tag>Svelte</Tag></li>
+		<li><Tag>Express</Tag></li>
+	</ul>
+	<h4>
+		<span class="line-indicator">~/skills</span>
+		<span class="skill-head">{$t('skills.tools')}</span>
+	</h4>
+	<ul>
+		<li><Tag>Tailwind</Tag></li>
+		<li><Tag>SASS</Tag></li>
+		<li><Tag>Vite</Tag></li>
+		<li><Tag>Webpack</Tag></li>
+		<li><Tag>Git</Tag></li>
+		<li><Tag>Nginx</Tag></li>
+		<li><Tag>Apache</Tag></li>
+		<li><Tag>Linux</Tag></li>
+		<li><Tag>Shell</Tag></li>
+	</ul>
+	<h4>
+		<span class="line-indicator">~/skills</span>
+		<span class="skill-head">{$t('skills.methods')}</span>
+	</h4>
+	<ul>
+		<li><Tag>Agile</Tag></li>
+		<li><Tag>Atomic Design</Tag></li>
+		<li><Tag>Animations</Tag></li>
+		<li><Tag>Responsive</Tag></li>
+		<li><Tag>Clean Code</Tag></li>
+		<li><Tag>REST-API</Tag></li>
+		<li><Tag>CI/CD</Tag></li>
+	</ul>
 </div>
 
 <style>
-    .skill-head {
+	.skill-head {
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -117,15 +111,18 @@
 		line-height: 1;
 	}
 
-    ul {
+	ul {
 		padding: 0;
-    }
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
 
 	ul:not(:last-child) {
 		margin-bottom: 2rem;
 	}
 
 	li {
-		display: inline-block;
+		list-style: none;
 	}
 </style>
