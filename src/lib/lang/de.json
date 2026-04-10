@@ -13,7 +13,7 @@
 		"subheadline": "Experte für Vue.js, Laravel und WordPress",
 		"paragraphs": [
 			"Als Full-Stack Entwickler unterstütze ich bei der Frontend-Entwicklung und der Backend-Entwicklung von Webseiten und Web-Apps. Ich bin Experte für Vue.js im Frontend, Laravel Backends und WordPress als CMS Lösung.",
-			"Darüber hinaus arbeite ich mich schnell in neue Technologien ein – damit du nicht den „perfekten Stack“, sondern die beste Lösung bekommst."
+			"Darüber hinaus arbeite ich mich schnell in neue Technologien ein – mit dem Ziel, die bestmögliche Lösung zu entwickeln, unabhängig von einem bestimmten Stack."
 		]
 	},
 
@@ -37,7 +37,7 @@
 		"projects": [
 			{
 				"title": "Fahrzeug Portal",
-				"description": "Middleware für den Import von Fahrzeugdaten und Bereitstellung der Daten per REST-API.",
+				"description": "Middleware für den Import von Fahrzeugdaten und Bereitstellung der Daten via REST-API.",
 				"img": "vehicles.bilstein.com.webp",
 				"imgAlt": "Bilstein Website",
 				"tags": ["Laravel", "REST-API"]
